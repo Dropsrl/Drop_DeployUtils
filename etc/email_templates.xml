@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="drop_deploy_send_alert"
+    	label="Email Alert Deploy"
+    	file="email_alert_deploy.html"
+    	type="html"
+    	module="Drop_DeployUtils"
+    	area="frontend"/>
+	<template id="drop_end_deploy_send_alert"
+          label="Email Alert End Deploy"
+          file="email_alert_end_deploy.html"
+          type="html"
+          module="Drop_DeployUtils"
+          area="frontend"/>
+</config>

@@ -1,0 +1,10 @@
+<!--@subject {{trans "[Deploy Completed] %store_name" store_name=$store.getFrontendName()}} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<p>{{trans "Deployment for the %store_name site has ended successfully." store_name=$store.getFrontendName()}}</p>
+
+{{depend composerlog}}
+    <h4>Composer update log:</h4>
+    {{var composerlog|raw}}
+{{/depend}}

@@ -1,0 +1,21 @@
+{
+  "name": "drop/module-deploy-utils",
+  "description": "Utilities per i deploy",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "e.pascucci@drop.it",
+      "name": "Enrico Pascucci"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Drop\\DeployUtils\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

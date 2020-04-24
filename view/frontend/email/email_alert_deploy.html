@@ -1,0 +1,18 @@
+<!--@subject {{trans "[Deploy Started] %store_name" store_name=$store.getFrontendName()}} @-->
+
+<!--@vars {
+"var store.getFrontendName()":"Store Name"
+"var store_phone":"Store Phone",
+"var store_email":"Store Email"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<p> {{trans "A deployment has been launched for %store_name" store_name=$store.getFrontendName()}} </p>
+<p> {{trans "The site will be under maintenance for about 5 minutes, then it will come back online."}} </p>
+<p>
+{{trans "During this process the application cache will be flushed several times."}}<br/>
+{{trans "The site may initially be slightly slower, but the pages you visit will progressively regenerate the cache."}}<br/>
+{{trans "In case of errors during the automated installation, you may not receive the end deployment email."}}<br/>
+{{trans "However, it will be completed manually and you will be notified of the end of the process through the uptime monitoring service."}}<br/>
+</p>

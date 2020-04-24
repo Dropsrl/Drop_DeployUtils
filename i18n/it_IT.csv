@@ -1,0 +1,7 @@
+"A deployment has been launched for %store_name","Un deploy è stato lanciato per il sito  %store_name"
+"The site will be under maintenance for about 5 minutes, then it will come back online.",""Il sito sarà in maintenance per circa 5 minuti, poi tornerà online."
+"During this process the application cache will be flushed several times.","Durante questo processo verrà flushata più volte la cache dell'applicativo."
+"The site may initially be slightly slower, but the pages you visit will progressively regenerate the cache.","Il sito inizialmente potrebbe risultare leggermente più lento, ma le pagine visitate rigenereranno progressivamente la cache."
+"In case of errors during the automated installation, you may not receive the end deployment email.","In caso di errori durante l'installazione automatizzata potresti non ricevere la mail di fine deploy."
+"However, it will be completed manually and you will be notified of the end of the process through the uptime monitoring service.","Verrà comunque sia portato a termine manualmente e verrai notificato della fine del processo attraverso il servizio di monitoraggio dell'uptime."
+"Deployment for the %store_name site has ended successfully.","Il deploy per il sito  %store_name è terminato correttamente."
