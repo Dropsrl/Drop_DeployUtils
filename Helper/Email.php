@@ -86,6 +86,11 @@ class Email {
             $this->logger->error('Maintenance is not enabled. Not sending deploy alert notification.');
             return false;
         }
+        $to = $this->getEmailRecipients();
+        if(empty($to)) {
+            $this->logger->error('Empty email recipients.');
+            return false;
+        }
 
         $sender = [
             'name' => $this->scopeConfig->getValue('trans_email/ident_general/name'),
@@ -101,7 +106,7 @@ class Email {
             ->setTemplateOptions($templateOptions)
             ->setTemplateVars($templateVariables)
             ->setFrom($sender)
-            ->AddTo($this->getEmailRecipients())
+            ->AddTo($to)
             ->setReplyTo($sender['email'])
             ->getTransport();
 
