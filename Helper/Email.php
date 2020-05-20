@@ -135,6 +135,10 @@ class Email {
      * @return mixed
      */
     public function getEmailRecipients() {
-        return explode(',', $this->getConfigValue(self::XML_PATH_DEPLOY_UTILS_GENERAL_EMAIL));
+        $tos = $this->getConfigValue(self::XML_PATH_DEPLOY_UTILS_GENERAL_EMAIL);
+        if(strpos($tos, ',') !== false) {
+            return explode(',', $tos);
+        }
+        return $tos;
     }
 }
